@@ -21,7 +21,7 @@
     left: 0;
     top: 0;
     height: 100%;
-    background:  #22cdef;
+    background:  #4e22ef;
     z-index: 100;
     transition: width 300ms;
 }
@@ -29,7 +29,7 @@
 .sidebar-brand {
     height: 90px;
     padding: 2rem 0rem 1rem 2rem;
-    color: #e5ff00;
+    color: #ffffff;
 }
 
 .sidebar-brand span {
@@ -102,7 +102,7 @@
 }
 
 header {
-    background-color: rgb(66, 255, 246);
+    background-color: #300bb4;
     display: flex;
     justify-content: space-between;
     padding: 1rem 1.5rem;
@@ -120,7 +120,7 @@ header {
 }
 
 header h2 {
-    color: #222;
+    color: #ffffff;
     padding-top: 10px;
 }
 
@@ -161,6 +161,7 @@ header label span {
 .user-name {
     display: flex;
     align-items: center;
+    color: #ffffff;
 
 }
 
@@ -239,10 +240,10 @@ main {
     border-bottom: 1px solid #f0f0f0;
 }
 
-.card-header button {
-    background: #2f5bdd;
+.button {
+    background: #ff0000;
     border-radius: 10px;
-    color: #fff;
+    color: #ff0000;
     font-size: .8rem;
     padding: .5rem 1rem;
     border: 1px solid #2f5bdd;

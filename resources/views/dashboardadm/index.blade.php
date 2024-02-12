@@ -3,13 +3,12 @@
 @section('content')
 <main>
 
-      <div class="recent-grid">
         <div class="projects">
           <div class="card">
             <div class="card-header">
               <h3>Pesanan</h3>
 
-              <button class="las la-angle-double-right">lihat</button>
+              <button class="Button">Lihat</button>
             </div>
               
             <div class="card-body">
@@ -29,11 +28,9 @@
                     
                   <tbody>
                     <tr>
-                      <td>Keyboard Logitech</td>
-                      <td>Di Antar</td>
+                      <td>Avanza</td>
                       <td>
-                        <span class="status Green"></span>
-                        Dalam Perjalanan
+                        <button class="Button">Lihat</button>
                       </td>
                     </tr>
                     <tr>
@@ -105,9 +102,6 @@
               </div>
             </div>
           </div>
-        </div>
-      </div>
-
   </main>
 @endsection
 
