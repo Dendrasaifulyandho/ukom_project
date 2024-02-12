@@ -20,8 +20,7 @@
                 <table width=100%>
                   <thead>
                     <tr>
-                      <td>Nama Barang</td>
-                      <td>Keadaan</td>
+                      <td>Nama Mobil</td>
                       <td>Status</td>
                     </tr>
                   </thead>
@@ -34,11 +33,9 @@
                       </td>
                     </tr>
                     <tr>
-                      <td>Mouse Pad Logitech</td>
-                      <td>Dikemas</td>
+                      <td>Luxio</td>
                       <td>
-                        <span class="status Yellow"></span>
-                        Menunggu Kurir
+                        <button class="Button">Lihat</button>
                       </td>
                     </tr>
                     <tr>
