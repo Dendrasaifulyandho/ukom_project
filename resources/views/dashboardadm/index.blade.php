@@ -1,57 +1,246 @@
 @extends('layout.main')
 @section('title, dashboard')
 @section('content')
+<main>
 
-<<!-- resources/views/layouts/admin.blade.php -->
+    <div class="cards">
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Admin Dashboard</title>
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-    <style>
-        body {
-            background-color: #343a40; /* Warna latar belakang biru gelap */
-            color: #fff; /* Warna teks putih */
-        }
-    </style>
-</head>
-<body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <a class="navbar-brand" href="#">Admin Dashboard</a>
-    </nav>
-    <div id="layoutSidenav">
-        <div id="layoutSidenav_nav">
-            <!-- Sidebar -->
-            <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
-                <!-- Sidebar - Brand -->
-                <a class="sidebar-brand d-flex align-items-center justify-content-center" href="#">
-                    <div class="sidebar-brand-icon">
-                        <i class="fas fa-chart-line"></i>
-                    </div>
-                    <div class="sidebar-brand-text mx-3">Admin</div>
-                </a>
-                <!-- Divider -->
-                <hr class="sidebar-divider my-0">
-                <!-- Nav Item - Dashboard -->
-                <li class="nav-item active">
-                    <a class="nav-link" href="{{ route('admin.dashboard') }}">
-                        <i class="fas fa-fw fa-tachometer-alt"></i>
-                        <span>Dashboard</span></a>
-                </li>
-            </ul>
+      <div class="card-single">
+        <div>
+          <h1>50</h1>
+          <span>pelanggan</span>
         </div>
-        <div id="layoutSidenav_content">
-            <main>
-                @yield('content')
-            </main>
+        <div>
+          <span class="las la-users"></span>
         </div>
+      </div>
+
+      <div class="card-single">
+        <div>
+          <h1>125</h1>
+          <span>Pesanan</span>
+        </div>
+        <div>
+          <span class="las la-shopping-bag"></span>
+        </div>
+      </div>
+
+      <div class="card-single">
+        <div>
+          <h1>176</h1>
+          <span>Mobil Siap</span>
+        </div>
+        <div>
+          <span class="las la-archive"></span>
+        </div>
+      </div>
+
+      <div class="card-single">
+        <div>
+          <h1>1000k</h1>
+          <span>penghasilan</span>
+        </div>
+        <div>
+          <span class="las la-wallet"></span>
+        </div>
+      </div>
+        
     </div>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/js/all.min.js" crossorigin="anonymous"></script>
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
-</body>
-</html>
+
+      <div class="recent-grid">
+        <div class="projects">
+          <div class="card">
+            <div class="card-header">
+              <h3>Pesanan</h3>
+
+              <button class="las la-angle-double-right">lihat</button>
+            </div>
+              
+            <div class="card-body">
+
+            <example-componenet></example-componenet>
+
+
+              <div class="table-responsive">
+                <table width=100%>
+                  <thead>
+                    <tr>
+                      <td>Nama Barang</td>
+                      <td>Keadaan</td>
+                      <td>Status</td>
+                    </tr>
+                  </thead>
+                    
+                  <tbody>
+                    <tr>
+                      <td>Keyboard Logitech</td>
+                      <td>Di Antar</td>
+                      <td>
+                        <span class="status Green"></span>
+                        Dalam Perjalanan
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>Mouse Pad Logitech</td>
+                      <td>Dikemas</td>
+                      <td>
+                        <span class="status Yellow"></span>
+                        Menunggu Kurir
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>Mouse Logitech</td>
+                      <td>Belum Dikemas</td>
+                      <td>
+                        <span class="status Red"></span>
+                        Dalam Proses
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>EarPhone</td>
+                      <td>Dikemas</td>
+                      <td>
+                        <span class="status Yellow"></span>
+                        Menunggu Kurir
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>Smart Watch</td>
+                      <td>Siap Di Antar</td>
+                      <td>
+                        <span class="status Green"></span>
+                        Dalam Perjalanan
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>HP Realme</td>
+                      <td>Siap Di Antar</td>
+                      <td>
+                        <span class="status Green"></span>
+                        Dalam Perjalanan
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>Jam Tangan</td>
+                      <td>Dikemas</td>
+                      <td>
+                        <span class="status Yellow"></span>
+                        Menunggu Kurir
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>Laptop Samsung</td>
+                      <td>Siap Di Antar</td>
+                      <td>
+                        <span class="status Green"></span>
+                        Dalam Perjalanan
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>Headset Sony</td>
+                      <td>Belum Dikemas</td>
+                      <td>
+                        <span class="status Red"></span>
+                        Dalam Proses
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="customers">
+
+          <div class="card">
+            <div class="card-header">
+              <h3>Pelanggan Baru</h3>
+
+              <button class="las la-angle-double-right">lihat</button>
+            </div>
+              
+            <div class="card-body">
+              <div class="customer">
+                <div>
+                  <img src="{{ ('user-img3.avif') }}" width="40px" height="40px" alt="">
+                  <div>
+                    <h4>Bang-Beng</h4>
+                    <small>Pelanggan</small>
+                  </div>
+                </div>
+                <div class="logo">
+                  <span class="las la-user-circle"></span>
+                  <span class="las la-comment"></span>
+                  <span class="las la-phone"></span>
+                </div>
+              </div>
+
+              <div class="customer">
+                <div>
+                  <img src="{{ ('user-img4.avif') }}" width="40px" height="40px" alt="">
+                  <div>
+                    <h4>Asep</h4>
+                    <small>Pelanggan</small>
+                  </div>
+                </div>
+                <div>
+                  <span class="las la-user-circle"></span>
+                  <span class="las la-comment"></span>
+                  <span class="las la-phone"></span>
+                </div>
+              </div>
+
+              <div class="customer">
+                <div>
+                  <img src="{{ ('user-img5.png') }}" width="40px" height="40px" alt="">
+                  <div>
+                    <h4>Mamah udin</h4>
+                    <small>Pelanggan</small>
+                  </div>
+                </div>
+                <div>
+                  <span class="las la-user-circle"></span>
+                  <span class="las la-comment"></span>
+                  <span class="las la-phone"></span>
+                </div>
+              </div>
+
+              <div class="customer">
+                <div>
+                  <img src="{{ ('user-img5.png') }}" width="40px" height="40px" alt="">
+                  <div>
+                    <h4>Joni</h4>
+                    <small>Pelanggan</small>
+                  </div>
+                </div>
+                <div>
+                  <span class="las la-user-circle"></span>
+                  <span class="las la-comment"></span>
+                  <span class="las la-phone"></span>
+                </div>
+              </div>
+
+              <div class="customer">
+                <div>
+                  <img src="{{ ('user-img5.png') }}" width="40px" height="40px" alt="">
+                  <div>
+                    <h4>Joni</h4>
+                    <small>Pelanggan</small>
+                  </div>
+                </div>
+                <div>
+                  <span class="las la-user-circle"></span>
+                  <span class="las la-comment"></span>
+                  <span class="las la-phone"></span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+  </main>
 @endsection
+

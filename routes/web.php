@@ -1,8 +1,11 @@
 <?php
 
+use App\Http\Controllers\admin as ControllersAdmin;
+use App\Http\Controllers\adminController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\dashboardController;
 use App\Http\Controllers\pmmobilController;
+use App\Models\admin;
 
 /*
 |--------------------------------------------------------------------------
@@ -27,3 +30,4 @@ use App\Http\Controllers\pmmobilController;
 
 Route::get('/', [dashboardController::class, 'index']);
 Route::get('/pmmobil', [pmmobilController::class, 'index']);
+Route::get('/admin', [adminController::class, 'index']);
